@@ -11,9 +11,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Layout 1</layout>
+<<<<<<< HEAD
         <layout order="2">Bot PlayTest</layout>
         <layout active="1" order="3">Layout 2</layout>
         <event-sheet order="1">Event sheet 1</event-sheet>
+=======
+        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
+>>>>>>> 663e4bc79e5c76ffb81aed5b1cbc85cd362a8c4a
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

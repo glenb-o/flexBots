@@ -106,22 +106,6 @@
         <object-type name="Keyboard" sid="291563227940655">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="Sprite4" sid="502856759835154">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="600610961288821" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite5" sid="539015199670259">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="705563932933591" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="spikeBot" sid="546410163176909">
             <plugin id="Sprite" />
             <instance-variables>
@@ -181,10 +165,6 @@
         <object-type name="HPfastBot" sid="978091990832207">
             <plugin id="progressbar" />
         </object-type>
-        <object-type name="Particles" sid="317140821334298">
-            <plugin id="Particles" />
-            <texture original-source="C:\Users\Glen\Documents\GitHub\flexBots\FIRE.png" />
-        </object-type>
         <object-type name="Particles2" sid="917509647128249">
             <plugin id="Particles" />
             <texture />
@@ -228,14 +208,6 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="733932299081132" speed="5">
                     <frame duration="1" hotspotX="0.500546" hotspotY="0.571754" original-source="C:\Users\junej\Pictures\spike.JPG" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite11" sid="597210027824915">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="354973083952405" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 3</name>
+    <events>
+        <include>Event sheet 1</include>
+        <event-block sid="834655335213532">
+            <conditions>
+                <condition id="2" name="Key is down" sid="860155804762948" type="Keyboard">
+                    <param id="0" name="Key">84 (T)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="778780796463371" type="Sprite14">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="959438040193940">
+            <conditions>
+                <condition id="2" name="Key is down" sid="405663600861260" type="Keyboard">
+                    <param id="0" name="Key">70 (F)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="855156865504641" type="Sprite14">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="678800924600611">
+            <conditions>
+                <condition id="2" name="Key is down" sid="104207488480245" type="Keyboard">
+                    <param id="0" name="Key">71 (G)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="276210606500036" type="Sprite14">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="946971803014556">
+            <conditions>
+                <condition id="2" name="Key is down" sid="246363864898987" type="Keyboard">
+                    <param id="0" name="Key">72 (H)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="250911699292846" type="Sprite14">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <variable constant="0" name="fastBot_AI" sid="768225513511258" static="0" type="number">100</variable>
+        <event-block sid="902779832730200">
+            <conditions>
+                <condition id="2" name="Key is down" sid="299436810335556" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="552437271694839" type="spikeBot">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="905472402525906">
+            <conditions>
+                <condition id="2" name="Key is down" sid="159480588885745" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="820865848845266" type="spikeBot">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="602313326492721">
+            <conditions>
+                <condition id="2" name="Key is down" sid="134741354545362" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="209320117051904" type="spikeBot">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="232567878026884">
+            <conditions>
+                <condition id="2" name="Key is down" sid="274259349294857" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="961700680450968" type="spikeBot">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="645303133790857">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="752260791609140" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="965896844537902" type="HPspikeBot">
+                    <param id="0" name="X">spikeBot.X -38</param>
+                    <param id="1" name="Y">spikeBot.Y-50</param>
+                </action>
+                <action id="3" name="Set progress" sid="991601330657253" type="HPspikeBot">
+                    <param id="0" name="Value">spikeBot</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="258185502811186">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="505688129876402" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="173704772249069" type="HPfastBot_AI">
+                    <param id="0" name="X">fastBot_AI.X -30</param>
+                    <param id="1" name="Y">fastBot_AI.Y-30</param>
+                </action>
+                <action id="3" name="Set progress" sid="635995417800929" type="HPfastBot_AI">
+                    <param id="0" name="Value">fastBot_AI</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="464977408661557">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="711604530251914" type="System">
+                    <param id="0" name="Variable">fastBot</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="818481091006572" type="fastBot_AI" />
+            </actions>
+        </event-block>
+        <event-block sid="467760892815348">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="827696549014911" type="System">
+                    <param id="0" name="Variable">spikeBot</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="831707131872279" type="spikeBot" />
+                <action id="-9" name="Destroy" sid="810119924929140" type="Sprite10" />
+                <action id="-9" name="Destroy" sid="376631459323036" type="Sprite13" />
+            </actions>
+        </event-block>
+        <event-block sid="381282543566397">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="658373129271511" type="System" />
+                <condition id="1" name="Is overlapping another object" sid="445453887701231" type="fastBot_AI">
+                    <param id="0" name="Object">spikeBot</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="489313766939739" type="System">
+                    <param id="0" name="Variable">spikeBot</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-3" name="Create object" sid="449107607444590" type="System">
+                    <param id="0" name="Object to create">Particles2</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">spikeBot.X</param>
+                    <param id="3" name="Y">spikeBot.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="951167935216708">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="326917044530970" type="System" />
+                <condition id="1" name="Is overlapping another object" sid="798402127577683" type="Sprite13">
+                    <param id="0" name="Object">fastBot_AI</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="397061441671351" type="System">
+                    <param id="0" name="Variable">fastBot</param>
+                    <param id="1" name="Value">15</param>
+                </action>
+                <action id="-3" name="Create object" sid="375722728282722" type="System">
+                    <param id="0" name="Object to create">Particles2</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">fastBot_AI.X</param>
+                    <param id="3" name="Y">fastBot_AI.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="880578444077718">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="536584227136220" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="656378885449664" type="Particles2" />
+            </actions>
+        </event-block>
+        <event-block sid="375381327624634">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="832180222595737" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="843368187201605" type="Sprite7">
+                    <param id="0" name="Object">fastBot_AI</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="516963547359530" type="System">
+                    <param id="0" name="Variable">fastBot_AI</param>
+                    <param id="1" name="Value">15</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="627703453871057">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="850093386183107" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="261940464711261" type="Sprite7">
+                    <param id="0" name="Object">spikeBot</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="984809661897797" type="System">
+                    <param id="0" name="Variable">spikeBot</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="914190786263876">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="486508805485205" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="979029642163335" type="Sprite10">
+                    <param id="0" name="Pin to">spikeBot</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="907904941866469">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="819206972258988" type="fastBot_AI">
+                    <param id="0" name="Object">spikeBot</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="379085625381190" type="fastBot_AI">
+                    <param id="0" name="X">spikeBot.X</param>
+                    <param id="1" name="Y">spikeBot.Y</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="888785313635650" type="fastBot_AI">
+                    <param id="0" name="Speed">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="267264374515531">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" inverted="1" name="Has LOS to object" sid="817186146802132" type="fastBot_AI">
+                    <param id="0" name="Object">spikeBot</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="457582455051817" type="fastBot_AI">
+                    <param id="0" name="Speed">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>If you hit the fastBot_AI with the side that has the green square, it will do damage to the square bot</comment>
+        <event-block sid="818937710599940">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="377530019785020" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="369875298864104" type="Sprite13">
+                    <param id="0" name="Pin to">Sprite10</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

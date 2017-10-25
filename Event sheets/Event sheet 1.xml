@@ -139,7 +139,7 @@
         <event-block sid="815244320715299">
             <conditions>
                 <condition id="-1" name="Every tick" sid="697932260090904" type="System" />
-                <condition id="1" name="Is overlapping another object" sid="576221780001134" type="spikeBot">
+                <condition id="1" name="Is overlapping another object" sid="576221780001134" type="Sprite10">
                     <param id="0" name="Object">fastBot</param>
                 </condition>
             </conditions>
@@ -178,9 +178,7 @@
         </event-block>
         <event-block sid="344668326652162">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="216669429160707" type="System">
-                    <param id="0" name="Interval (seconds)">1.0</param>
-                </condition>
+                <condition id="-1" name="Every tick" sid="216669429160707" type="System" />
                 <condition id="1" name="Is overlapping another object" sid="359184003992023" type="Sprite7">
                     <param id="0" name="Object">fastBot</param>
                 </condition>
@@ -204,9 +202,7 @@
         </event-block>
         <event-block sid="436585268662900">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="731508097712456" type="System">
-                    <param id="0" name="Interval (seconds)">1.0</param>
-                </condition>
+                <condition id="-1" name="Every tick" sid="731508097712456" type="System" />
                 <condition id="1" name="Is overlapping another object" sid="562523846624816" type="Sprite7">
                     <param id="0" name="Object">spikeBot</param>
                 </condition>

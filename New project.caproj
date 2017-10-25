@@ -49,7 +49,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="fastBot" sid="831785084832510">
+        <object-type name="fastBot_AI" sid="831785084832510">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="health" sid="738669165916858" type="number" />
@@ -58,8 +58,11 @@
                 <behavior-type name="Solid" sid="435492295490476">
                     <behavior id="solid" />
                 </behavior-type>
-                <behavior-type name="8Direction" sid="135448267173823">
-                    <behavior id="EightDir" />
+                <behavior-type name="LineOfSight" sid="784736931637494">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="178013509235183">
+                    <behavior id="Bullet" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -236,7 +239,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="fastBot_AI" sid="529320046822936">
+        <object-type name="fastBot_AIii" sid="529320046822936">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="health" sid="372744911450611" type="number" />
@@ -310,8 +313,8 @@
     <families>
         <family name="Family1" plugin-id="Sprite" sid="404642531810294">
             <members>
-                <member>fastBot</member>
                 <member>fastBot_AI</member>
+                <member>fastBot_AIii</member>
                 <member>spikeBot</member>
             </members>
         </family>

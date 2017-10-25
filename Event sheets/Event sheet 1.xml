@@ -73,8 +73,8 @@
             </conditions>
             <actions>
                 <action id="-3" name="Set position" sid="961618791463938" type="HPfastBot">
-                    <param id="0" name="X">fastBot.X -30</param>
-                    <param id="1" name="Y">fastBot.Y-40</param>
+                    <param id="0" name="X">fastBot_AI.X -30</param>
+                    <param id="1" name="Y">fastBot_AI.Y-40</param>
                 </action>
                 <action id="3" name="Set progress" sid="681589582569676" type="HPfastBot">
                     <param id="0" name="Value">fastBot</param>
@@ -90,7 +90,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="986051749924856" type="fastBot" />
+                <action id="-9" name="Destroy" sid="986051749924856" type="fastBot_AI" />
             </actions>
         </event-block>
         <event-block sid="859133893243515">
@@ -109,7 +109,7 @@
         <event-block sid="508632614859597">
             <conditions>
                 <condition id="-1" name="Every tick" sid="189314239401069" type="System" />
-                <condition id="1" name="Is overlapping another object" sid="289577061866315" type="fastBot">
+                <condition id="1" name="Is overlapping another object" sid="289577061866315" type="fastBot_AI">
                     <param id="0" name="Object">spikeBot</param>
                 </condition>
             </conditions>
@@ -140,7 +140,7 @@
             <conditions>
                 <condition id="-1" name="Every tick" sid="697932260090904" type="System" />
                 <condition id="1" name="Is overlapping another object" sid="576221780001134" type="Sprite10">
-                    <param id="0" name="Object">fastBot</param>
+                    <param id="0" name="Object">fastBot_AI</param>
                 </condition>
             </conditions>
             <actions />
@@ -159,8 +159,8 @@
                         <action id="-3" name="Create object" sid="944942600255590" type="System">
                             <param id="0" name="Object to create">Particles2</param>
                             <param id="1" name="Layer">2</param>
-                            <param id="2" name="X">fastBot.X</param>
-                            <param id="3" name="Y">fastBot.Y</param>
+                            <param id="2" name="X">fastBot_AI.X</param>
+                            <param id="3" name="Y">fastBot_AI.Y</param>
                         </action>
                     </actions>
                 </event-block>
@@ -180,7 +180,7 @@
             <conditions>
                 <condition id="-1" name="Every tick" sid="216669429160707" type="System" />
                 <condition id="1" name="Is overlapping another object" sid="359184003992023" type="Sprite7">
-                    <param id="0" name="Object">fastBot</param>
+                    <param id="0" name="Object">fastBot_AI</param>
                 </condition>
             </conditions>
             <actions />

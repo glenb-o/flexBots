@@ -330,7 +330,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="fastBot" uid="56">
+                <instance type="fastBot_AI" uid="56">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -346,14 +346,21 @@
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="8Direction">
+                        <behavior-instance type="LineOfSight">
                             <properties>
-                                <max-speed>200</max-speed>
-                                <acceleration>600</acceleration>
-                                <deceleration>500</deceleration>
-                                <directions>8 directions</directions>
-                                <set-angle>360 degree (smooth)</set-angle>
-                                <default-controls>Yes</default-controls>
+                                <obstacles>Solids</obstacles>
+                                <range>10000</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -361,14 +368,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>110.69543457</x>
-                        <y>94.173019409</y>
+                        <x>116</x>
+                        <y>90</y>
                         <z>0</z>
-                        <width>9.882250786</width>
-                        <height>5.086452007</height>
+                        <width>71.429000854</width>
+                        <height>29.281000137</height>
                         <depth>0</depth>
-                        <hotspotX>0.426470578</hotspotX>
-                        <hotspotY>0.485714287</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -411,7 +418,7 @@
                         <height>4.547358036</height>
                         <depth>0</depth>
                         <hotspotX>0.480519474</hotspotX>
-                        <hotspotY>0.46808511</hotspotY>
+                        <hotspotY>0.382978737</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

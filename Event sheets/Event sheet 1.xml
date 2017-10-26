@@ -90,7 +90,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="986051749924856" type="fastBot_AI" />
+                <action id="-9" name="Destroy" sid="986051749924856" type="fastBot" />
             </actions>
         </event-block>
         <event-block sid="859133893243515">
@@ -110,7 +110,7 @@
             <conditions>
                 <condition id="-1" name="Every tick" sid="189314239401069" type="System" />
                 <condition id="1" name="Is overlapping another object" sid="289577061866315" type="fastBot">
-                    <param id="0" name="Object">fastBot</param>
+                    <param id="0" name="Object">spikeBot</param>
                 </condition>
             </conditions>
             <actions />
@@ -279,7 +279,7 @@
             </conditions>
             <actions>
                 <action behavior="8Direction" id="7" name="Simulate control" sid="423421789829547" type="fastBot">
-                    <param id="0" name="Control">3</param>
+                    <param id="0" name="Control">1</param>
                 </action>
             </actions>
         </event-block>

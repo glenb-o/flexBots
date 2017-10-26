@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
     <events>
-        <variable constant="0" name="fastBot_AI" sid="768225513511258" static="0" type="number">100</variable>
+        <include>GlobalVariables</include>
         <comment>spikeBot Movement</comment>
         <event-block sid="902779832730200">
             <conditions>
@@ -170,7 +170,9 @@
         </event-block>
         <event-block sid="147507329243752">
             <conditions>
-                <condition id="-1" name="Every tick" sid="388781927588119" type="System" />
+                <condition id="-6" name="Every X seconds" sid="526866878784594" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
                 <condition id="1" name="Is overlapping another object" sid="624262754458332" type="spike">
                     <param id="0" name="Object">fastBot_AI</param>
                 </condition>
@@ -181,50 +183,6 @@
                     <param id="1" name="Value">0.05</param>
                 </action>
             </actions>
-            <sub-events>
-                <event-block sid="775786902978670">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="526866878784594" type="System">
-                            <param id="0" name="Interval (seconds)">1.0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="211009430440775" type="System">
-                            <param id="0" name="Variable">fastBot</param>
-                            <param id="1" name="Value">15</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="473299832611994">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="236771194931938" type="System" />
-                <condition id="1" name="Is overlapping another object" sid="269244445812992" type="spike">
-                    <param id="0" name="Object">spikeBot</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-11" name="Subtract from" sid="549277098000719" type="System">
-                    <param id="0" name="Variable">spikeBot</param>
-                    <param id="1" name="Value">0.05</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="350272865522641">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="346168445986011" type="System">
-                            <param id="0" name="Interval (seconds)">1.0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="797312125450249" type="System">
-                            <param id="0" name="Variable">spikeBot</param>
-                            <param id="1" name="Value">20</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
         </event-block>
         <event-block sid="914190786263876">
             <conditions>
@@ -265,18 +223,6 @@
                 </action>
             </actions>
         </event-block>
-        <comment>If you hit the fastBot_AI with the side that has the green square, it will do damage to the square bot</comment>
-        <event-block sid="818937710599940">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="377530019785020" type="System" />
-            </conditions>
-            <actions>
-                <action behavior="Pin" id="0" name="Pin to object" sid="369875298864104" type="Sprite13">
-                    <param id="0" name="Pin to">spikeBot_Hitbox</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-            </actions>
-        </event-block>
         <comment>Bot Lose</comment>
         <event-block sid="464977408661557">
             <conditions>
@@ -301,7 +247,6 @@
             <actions>
                 <action id="-9" name="Destroy" sid="831707131872279" type="spikeBot" />
                 <action id="-9" name="Destroy" sid="810119924929140" type="spikeBot_Hitbox" />
-                <action id="-9" name="Destroy" sid="376631459323036" type="Sprite13" />
             </actions>
         </event-block>
     </events>

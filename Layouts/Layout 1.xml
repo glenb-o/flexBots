@@ -144,8 +144,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>118.32787323</x>
-                        <y>100.074012756</y>
+                        <x>108</x>
+                        <y>99</y>
                         <z>0</z>
                         <width>72.628616333</width>
                         <height>72.628616333</height>
@@ -386,9 +386,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <instance-variables>
-                        <health>100</health>
-                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
                             <properties>
@@ -406,18 +403,23 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>606</x>
-                        <y>357</y>
+                        <x>614</x>
+                        <y>363</y>
                         <z>0</z>
                         <width>69.262107849</width>
                         <height>42.276863098</height>
                         <depth>0</depth>
-                        <hotspotX>0.480519474</hotspotX>
-                        <hotspotY>0.382978737</hotspotY>
+                        <hotspotX>0.506493509</hotspotX>
+                        <hotspotY>0.510638297</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

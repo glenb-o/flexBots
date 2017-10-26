@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GlobalVariables</name>
+    <events>
+        <variable constant="0" name="slowBot" sid="709086018018469" static="0" type="number">100</variable>
+        <variable constant="0" name="spikeBot" sid="423681731057438" static="0" type="number">100</variable>
+        <variable constant="0" name="fastBot" sid="549766921426041" static="0" type="number">100</variable>
+        <variable constant="0" name="fastBot_AI" sid="768225513511258" static="0" type="number">100</variable>
+    </events>
+</c2eventsheet>

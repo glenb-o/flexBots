@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 3</name>
     <events>
+        <include>GlobalVariables</include>
         <include>Event sheet 1</include>
         <event-block sid="834655335213532">
             <conditions>
@@ -49,6 +50,96 @@
             <actions>
                 <action behavior="8Direction" id="7" name="Simulate control" sid="250911699292846" type="slowBot">
                     <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="886628203514399">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="896890814754165" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="906708757335417" type="HPslowBot">
+                    <param id="0" name="X">slowBot.X -80</param>
+                    <param id="1" name="Y">slowBot.Y-100</param>
+                </action>
+                <action id="3" name="Set progress" sid="972652798070483" type="HPslowBot">
+                    <param id="0" name="Value">slowBot</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="419289950026191">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="590925555005748" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="960313865379642">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="948815487405596" type="fastBot_AI">
+                            <param id="0" name="Object">slowBot</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="677340894452622" type="fire">
+                            <param id="0" name="Object">slowBot</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="315297816782735" type="spikeBot_Hitbox">
+                            <param id="0" name="Object">slowBot</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="198855668910850" type="System">
+                            <param id="0" name="Variable">slowBot</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="472136686869212" type="System">
+                            <param id="0" name="Object to create">Particles2</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">slowBot.X</param>
+                            <param id="3" name="Y">slowBot.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="858016531961566">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="973815483282614" type="System" />
+                <condition id="1" name="Is overlapping another object" sid="282545845565646" type="spike">
+                    <param id="0" name="Object">slowBot</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="949373369629386" type="System">
+                    <param id="0" name="Variable">slowBot</param>
+                    <param id="1" name="Value">0.05</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="360859295313449">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="458676645896619" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="979216649717182" type="System">
+                            <param id="0" name="Variable">fastBot</param>
+                            <param id="1" name="Value">15</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>If you hit the fastBot_AI with the side that has the green square, it will do damage to the square bot</comment>
+        <event-block sid="177134290430949">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="795937277583107" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="809224607130243" type="Sprite13">
+                    <param id="0" name="Pin to">slowBot</param>
+                    <param id="1" name="Mode">0</param>
                 </action>
             </actions>
         </event-block>

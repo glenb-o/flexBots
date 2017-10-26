@@ -11,7 +11,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="778780796463371" type="Sprite14">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="778780796463371" type="slowBot">
                     <param id="0" name="Control">2</param>
                 </action>
             </actions>
@@ -23,7 +23,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="855156865504641" type="Sprite14">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="855156865504641" type="slowBot">
                     <param id="0" name="Control">0</param>
                 </action>
             </actions>
@@ -35,7 +35,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="276210606500036" type="Sprite14">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="276210606500036" type="slowBot">
                     <param id="0" name="Control">3</param>
                 </action>
             </actions>
@@ -47,7 +47,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="250911699292846" type="Sprite14">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="250911699292846" type="slowBot">
                     <param id="0" name="Control">1</param>
                 </action>
             </actions>

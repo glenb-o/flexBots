@@ -82,7 +82,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="691220319106039">
+        <object-type name="background" sid="691220319106039">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794238765087740" speed="5">
@@ -90,7 +90,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="285646792478593">
+        <object-type name="border_Outer" sid="285646792478593">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="130348692364498">
@@ -132,7 +132,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite7" sid="249561817541043">
+        <object-type name="fire" sid="249561817541043">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343357033532432" speed="5">
@@ -151,7 +151,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite8" sid="187641243485010">
+        <object-type name="wood" sid="187641243485010">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="885146105000530" speed="5">
@@ -182,7 +182,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite6" sid="101690737325071">
+        <object-type name="redSquare" sid="101690737325071">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="523732273658554" speed="5">
@@ -190,7 +190,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite9" sid="336715229175177">
+        <object-type name="blueSquare" sid="336715229175177">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="785744384633577" speed="5">
@@ -198,7 +198,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite10" sid="343994027948940">
+        <object-type name="spikeBot_Hitbox" sid="343994027948940">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Pin" sid="324849348591558">
@@ -211,43 +211,10 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="fastBot_AIii" sid="529320046822936">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="health" sid="372744911450611" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Solid" sid="352917765319523">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="LineOfSight" sid="969139923402921">
-                    <behavior id="LOS" />
-                </behavior-type>
-                <behavior-type name="Bullet" sid="494639853482143">
-                    <behavior id="Bullet" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="758072489045998" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\oggle\Desktop\game-dev\game_dev_2-\car.png">
-                        <collision-poly>
-                            <point x="0.056" y="0.112903" />
-                            <point x="0.5" y="0.0806452" />
-                            <point x="0.932" y="0.137097" />
-                            <point x="1" y="0.5" />
-                            <point x="0.932" y="0.862903" />
-                            <point x="0.5" y="0.919355" />
-                            <point x="0.056" y="0.887097" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="HPfastBot_AI" sid="952528482505689">
             <plugin id="progressbar" />
         </object-type>
-        <object-type name="Sprite12" sid="307810834032964">
+        <object-type name="spike" sid="307810834032964">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="950066071218406" speed="5">
@@ -268,7 +235,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite14" sid="402617529712666">
+        <object-type name="slowBot" sid="402617529712666">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="8Direction" sid="205692516874963">
@@ -320,16 +287,11 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="HPslowBot" sid="910856955806012">
+            <plugin id="progressbar" />
+        </object-type>
     </object-folder>
-    <families>
-        <family name="Family1" plugin-id="Sprite" sid="404642531810294">
-            <members>
-                <member>fastBot_AI</member>
-                <member>fastBot_AIii</member>
-                <member>spikeBot</member>
-            </members>
-        </family>
-    </families>
+    <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
         <layout>Bot PlayTest.xml</layout>

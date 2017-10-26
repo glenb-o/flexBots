@@ -73,8 +73,8 @@
             </conditions>
             <actions>
                 <action id="-3" name="Set position" sid="961618791463938" type="HPfastBot">
-                    <param id="0" name="X">fastBot_AI.X -30</param>
-                    <param id="1" name="Y">fastBot_AI.Y-40</param>
+                    <param id="0" name="X">fastBot.X -30</param>
+                    <param id="1" name="Y">fastBot.Y-40</param>
                 </action>
                 <action id="3" name="Set progress" sid="681589582569676" type="HPfastBot">
                     <param id="0" name="Value">fastBot</param>
@@ -109,8 +109,8 @@
         <event-block sid="508632614859597">
             <conditions>
                 <condition id="-1" name="Every tick" sid="189314239401069" type="System" />
-                <condition id="1" name="Is overlapping another object" sid="289577061866315" type="fastBot_AI">
-                    <param id="0" name="Object">spikeBot</param>
+                <condition id="1" name="Is overlapping another object" sid="289577061866315" type="fastBot">
+                    <param id="0" name="Object">fastBot</param>
                 </condition>
             </conditions>
             <actions />
@@ -140,7 +140,7 @@
             <conditions>
                 <condition id="-1" name="Every tick" sid="697932260090904" type="System" />
                 <condition id="1" name="Is overlapping another object" sid="576221780001134" type="Sprite10">
-                    <param id="0" name="Object">fastBot_AI</param>
+                    <param id="0" name="Object">fastBot</param>
                 </condition>
             </conditions>
             <actions />
@@ -159,8 +159,8 @@
                         <action id="-3" name="Create object" sid="944942600255590" type="System">
                             <param id="0" name="Object to create">Particles2</param>
                             <param id="1" name="Layer">2</param>
-                            <param id="2" name="X">fastBot_AI.X</param>
-                            <param id="3" name="Y">fastBot_AI.Y</param>
+                            <param id="2" name="X">fastBot.X</param>
+                            <param id="3" name="Y">fastBot.Y</param>
                         </action>
                     </actions>
                 </event-block>
@@ -180,7 +180,7 @@
             <conditions>
                 <condition id="-1" name="Every tick" sid="216669429160707" type="System" />
                 <condition id="1" name="Is overlapping another object" sid="359184003992023" type="Sprite7">
-                    <param id="0" name="Object">fastBot_AI</param>
+                    <param id="0" name="Object">fastBot</param>
                 </condition>
             </conditions>
             <actions />
@@ -232,6 +232,54 @@
                 <action behavior="Pin" id="0" name="Pin to object" sid="630095966498576" type="Sprite10">
                     <param id="0" name="Pin to">spikeBot</param>
                     <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="188724524163371">
+            <conditions>
+                <condition id="2" name="Key is down" sid="449986011883912" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="957242920443918" type="fastBot">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="107005492717616">
+            <conditions>
+                <condition id="2" name="Key is down" sid="334680962135029" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="230403849375195" type="fastBot">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="900824593180256">
+            <conditions>
+                <condition id="2" name="Key is down" sid="302290100158304" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="418653425243041" type="fastBot">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="881955451946040">
+            <conditions>
+                <condition id="2" name="Key is down" sid="179539150273936" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="423421789829547" type="fastBot">
+                    <param id="0" name="Control">3</param>
                 </action>
             </actions>
         </event-block>

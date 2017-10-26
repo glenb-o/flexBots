@@ -12,8 +12,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Layout 1</layout>
         <layout order="2">Layout 2</layout>
-        <layout active="1" order="3">Bot PlayTest</layout>
-        <event-sheet order="1">Event sheet 1</event-sheet>
+        <layout order="3">Bot PlayTest</layout>
+        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
         <event-sheet order="4">Event sheet 2</event-sheet>
     </open-tabs>
     <properties>
@@ -47,5 +47,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite12/" />
         <folder expanded="1" path="animation-folder/Sprite13/" />
         <folder expanded="1" path="animation-folder/Sprite14/" />
+        <folder expanded="1" path="animation-folder/fastBot/" />
     </folders-expanded>
 </c2uistate>

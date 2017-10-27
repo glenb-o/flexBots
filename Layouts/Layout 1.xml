@@ -131,7 +131,7 @@
                         </behavior-instance>
                         <behavior-instance type="8Direction">
                             <properties>
-                                <max-speed>200</max-speed>
+                                <max-speed>300</max-speed>
                                 <acceleration>600</acceleration>
                                 <deceleration>500</deceleration>
                                 <directions>8 directions</directions>
@@ -144,14 +144,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>108</x>
-                        <y>99</y>
+                        <x>118.32787323</x>
+                        <y>100.074012756</y>
                         <z>0</z>
-                        <width>72.628616333</width>
-                        <height>72.628616333</height>
+                        <width>51.445270538</width>
+                        <height>26.479183197</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.371428579</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -197,6 +197,56 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0.786724627</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="spikeBot_Hitbox" uid="20">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>572.556945801</x>
+                        <y>390.741851807</y>
+                        <z>0</z>
+                        <width>45.382919312</width>
+                        <height>32.448806763</height>
+                        <depth>0</depth>
+                        <hotspotX>1.042622924</hotspotX>
+                        <hotspotY>0.920273364</hotspotY>
+                        <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="spikeBot_Hitbox" uid="21">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>616.786010742</x>
+                        <y>386.928436279</y>
+                        <z>0</z>
+                        <width>45.382919312</width>
+                        <height>32.448806763</height>
+                        <depth>0</depth>
+                        <hotspotX>1.042622924</hotspotX>
+                        <hotspotY>0.920273364</hotspotY>
+                        <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -386,6 +436,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <health>100</health>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
                             <properties>
@@ -403,23 +456,18 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="BoundToLayout">
-                            <properties>
-                                <bound-by>Edge</bound-by>
-                            </properties>
-                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>614</x>
-                        <y>363</y>
+                        <x>606</x>
+                        <y>357</y>
                         <z>0</z>
                         <width>69.262107849</width>
                         <height>42.276863098</height>
                         <depth>0</depth>
-                        <hotspotX>0.506493509</hotspotX>
-                        <hotspotY>0.510638297</hotspotY>
+                        <hotspotX>0.480519474</hotspotX>
+                        <hotspotY>0.382978737</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -453,11 +501,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>417</x>
-                        <y>238</y>
+                        <x>422.053527832</x>
+                        <y>242.719650269</y>
                         <z>0</z>
-                        <width>180.745132446</width>
-                        <height>150.620941162</height>
+                        <width>93.243850708</width>
+                        <height>77.703208923</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -639,56 +687,6 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="spikeBot_Hitbox" uid="20">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>574.361938477</x>
-                        <y>369.32699585</y>
-                        <z>0</z>
-                        <width>29</width>
-                        <height>13</height>
-                        <depth>0</depth>
-                        <hotspotX>1.042622924</hotspotX>
-                        <hotspotY>0.920273364</hotspotY>
-                        <angle>1.570796371</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="spikeBot_Hitbox" uid="21">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>640.271850586</x>
-                        <y>336.921203613</y>
-                        <z>0</z>
-                        <width>32.497108459</width>
-                        <height>13.073413849</height>
-                        <depth>0</depth>
-                        <hotspotX>1.042622924</hotspotX>
-                        <hotspotY>0.920273364</hotspotY>
-                        <angle>-1.57079649</angle>
-                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

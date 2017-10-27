@@ -20,7 +20,6 @@
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -109,6 +108,9 @@
         </object-type>
         <object-type name="spikeBot" sid="546410163176909">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="health" sid="577397928157238" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="395356599192526">
                     <behavior id="EightDir" />
@@ -116,13 +118,10 @@
                 <behavior-type name="Solid" sid="110193171013891">
                     <behavior id="solid" />
                 </behavior-type>
-                <behavior-type name="BoundToLayout" sid="858922300702534">
-                    <behavior id="bound" />
-                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432917001328976" speed="5">
-                    <frame duration="1" hotspotX="0.506494" hotspotY="0.510638" original-source="C:\Users\junej\Pictures\robot01.JPG">
+                    <frame duration="1" hotspotX="0.480519" hotspotY="0.382979" original-source="C:\Users\junej\Pictures\robot01.JPG">
                         <collision-poly>
                             <point x="0.857143" y="0.12234" />
                             <point x="0.847403" y="0.882978" />
@@ -139,14 +138,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343357033532432" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\junej\Pictures\fire01.png">
                         <collision-poly>
-                            <point x="0.338333" y="0.406" />
-                            <point x="0.5" y="0.37" />
-                            <point x="0.661667" y="0.406" />
-                            <point x="0.7" y="0.5" />
-                            <point x="0.731667" y="0.678" />
-                            <point x="0.5" y="0.828" />
-                            <point x="0.348333" y="0.582" />
-                            <point x="0.335" y="0.5" />
+                            <point x="0.36" y="0.154" />
+                            <point x="0.715" y="0.168" />
+                            <point x="0.836667" y="0.496" />
+                            <point x="0.826666" y="0.926" />
+                            <point x="0.243334" y="0.918" />
+                            <point x="0.00666668" y="0.862" />
+                            <point x="0.0916663" y="0.506" />
+                            <point x="0.228333" y="0.324" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -208,7 +207,14 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="733932299081132" speed="5">
-                    <frame duration="1" hotspotX="1.04262" hotspotY="0.920273" original-source="C:\Users\junej\Pictures\spike.JPG" />
+                    <frame duration="1" hotspotX="1.04262" hotspotY="0.920273" original-source="C:\Users\junej\Pictures\spike.JPG">
+                        <collision-poly>
+                            <point x="0.374863" y="0.0911162" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.86011" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -261,12 +267,12 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299988886703269" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.371429">
                         <collision-poly>
-                            <point x="0.141927" y="0.731771" />
-                            <point x="0.143229" y="0.359375" />
-                            <point x="0.723958" y="0.359375" />
-                            <point x="0.726562" y="0.731772" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.816176" y="0" />
+                            <point x="0.819852" y="1" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -302,7 +308,6 @@
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
         <event-sheet>Event sheet 3.xml</event-sheet>
-        <event-sheet>GlobalVariables.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="0" />

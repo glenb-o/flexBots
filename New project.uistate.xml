@@ -16,7 +16,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="0">Event sheet 1</event-sheet>
         <event-sheet order="3">Event sheet 2</event-sheet>
         <event-sheet order="5">Event sheet 3</event-sheet>
-        <event-sheet order="6">GlobalVariables</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
